@@ -1,9 +1,9 @@
 <script setup>
 import MainLayout from '@/Layouts/MainLayout.vue';
-import HomeAbout from '@/Components/HomeAbout.vue';
-import OurVision from '@/Components/OurVision.vue';
+import HomeAbout from '@/Components/MainBanner.vue';
+import OurVision from '@/Components/BannerSlider.vue';
 import QualityPolicy from '@/Components/QualityPolicy.vue';
-import Mapsec from '@/Components/Mapsec.vue';
+import Mapsec from '@/Components/ExpertMembers.vue';
 
 
 

@@ -2,16 +2,20 @@
 import {ref, onMounted} from "vue";
 import "intersection-observer"; // for cross-browser support
 import MainLayout from '@/Layouts/MainLayout.vue';
-import HomeAbout from '@/Components/HomeAbout.vue';
-import OurVision from '@/Components/OurVision.vue';
-import OurServices from '@/Components/OurServices.vue';
-import ContactUs from '@/Components/ContactUs.vue';
-import Mapsec from '@/Components/Mapsec.vue';
+import MainBanner from '@/Components/MainBanner.vue';
+import BannerSlider from '@/Components/BannerSlider.vue';
+import AboutArea from '@/Components/AboutArea.vue';
+import PricingTable from '@/Components/PricingTable.vue';
+import ExpertMembers from '@/Components/ExpertMembers.vue';
+import CounterArea from '@/Components/CounterArea.vue';
+import TestimonialArea from '@/Components/TestimonialArea.vue';
 
-import WorkedWith from '@/Components/WorkedWith.vue';
-import OurAccreditation from '@/Components/OurAccreditation.vue';
-import HomeSuccess from '@/Components/Testimonials.vue';
-import OurRegistration from '@/Components/OurRegistration.vue';
+
+import OurPortfolio from '@/Components/OurPortfolio.vue';
+import OurService from '@/Components/OurService.vue';
+
+import WebsiteRanking from '@/Components/WebsiteRanking.vue';
+import WhyChooseUs from '@/Components/WhyChooseUs.vue';
 import { Link } from '@inertiajs/inertia-vue3';
 import Vue3AutoCounter from 'vue3-autocounter';
 
@@ -106,17 +110,17 @@ function submit() {
 
 <template>
   <MainLayout :isHome="true">
-    <div class="hero"></div>
-    <HomeAbout />
-    <OurVision />
-    <OurServices />
-    <OurAccreditation />
-    <OurRegistration />
-    <WorkedWith />
-    <HomeSuccess />
-    <ContactUs />
-    <Mapsec />
-
+    <MainBanner />
+    <BannerSlider />
+    <AboutArea />
+    <OurService />
+    <WhyChooseUs />
+    <OurPortfolio />
+    <WebsiteRanking />
+    <PricingTable />
+    <ExpertMembers />
+    <CounterArea />
+    <TestimonialArea />
 
   </MainLayout>
 </template>

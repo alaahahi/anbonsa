@@ -1,83 +1,140 @@
 
 <template>
+     <!-- Footer Area -->
+	 <footer id="footer" class="footer-area bg-footer">
+            <div class="footer-top">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-4 col-md-6">
+                            <div class="footer-single">
+                                <div class="footer-single-content">
+                                    <a href="index.html">
+                                        <img src="assets/img/footer-logo.png" alt="Logo">
+                                    </a>
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum efficitur convallis arcu, id dapibus nulla tincidunt.</p>
+                                </div>
 
-	<!-- map end -->
-	<footer class="footer">
-		<div class="container-fluid">
-            <div class="row footerrow">
-                <div class="col-md-4 col-lg-3">
-                    <img src="assets/images/logo.png" alt="" class="img-fluid footer__logo">
-                    <h6 class="footer__p"><i>ISO 9001:2015 certified</i></h6>
-                </div>
+                                <div class="newsletter-area">
+                                    <form class="newsletter-form" data-toggle="validator" method="POST">
+                                        <input type="email" class="form-control" placeholder="Email" name="EMAIL" required autocomplete="off">
+                                        <button class="subscribe-btn" type="submit">
+                                            Subscribe
+                                        </button>
+                                        <div id="validator-newsletter" class="form-result"></div>
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
 
-                <div class="col-md-4 col-lg-4">
-                    <h3 class="footer__h">Contact Us</h3>
-                    <a href="#" class="footerbox">
-						<i class="fa-regular fa-map-location-dot"></i>
-						<span>
-							P.O. Box 50346, Mezzanine Floor M-11, Dar Al Maha Bldg., Hor Al Anz East, Dubai, United Arab Emirates
-						</span>
-					</a>
-					<a href="tel:+97142975085" class="footerbox">
-						<i class="fa-light fa-phone"></i>
-						<span>
-							+971 4 297 5085
-						</span>
-					</a>
-					<a href="tel:+97142975086" class="footerbox">
-						<i class="fa-light fa-phone"></i>
-						<span>
-							+971 4 297 5086
-						</span>
-					</a>
-					<a href="mailto:cert@viscount.ae" class="footerbox">
-						<i class="fa-light fa-envelope"></i>
-						<span>
-							cert@viscount.ae
-						</span>
-					</a>
-                </div>
-                <div class="col-md-4 col-lg-3">
-					<h3 class="footer__h">Quick Links</h3>
-                    <ul class="ftrlist">
-                        <li><a href="/">Home</a></li>
-                        <li><a href="about.html">About</a></li>
-                        <li><a href="services.html">Our Services</a></li>
-                        <li><a href="projects.html">Our Projects</a></li>
-                        <li><a href="contact.html">Contact Us</a></li>
-                    </ul>
-                </div>
-                <div class="col-md-4 col-lg-2">
-                    <h3 class="footer__h">Follow Us</h3>
-                    <ul class="ftrsm">
-                        <li>
-							<a href="#" target="_blank"><img src="assets/images/social/twt.svg" alt="">
-								<i class="fa-brands fa-facebook-f"></i>
-							</a>
-						</li>
-						<li>
-							<a href="#" target="_blank"><img src="assets/images/social/twt.svg" alt="">
-								<i class="fa-brands fa-instagram"></i>
-							</a>
-						</li>
-						<li>
-							<a href="#" target="_blank"><img src="assets/images/social/twt.svg" alt="">
-								<i class="fa-brands fa-linkedin"></i>
-							</a>
-						</li>
-                    </ul>
+                        <div class="col-lg-3 col-md-6">
+                            <div class="footer-list ml-50">
+                                <h3>Services</h3>
+                                <ul>
+                                    <li>
+                                        <i class='bx bxs-chevron-right'></i>
+                                        <a href="services.html">SEO Optimization</a>
+                                    </li>
+                                    <li>
+                                        <i class='bx bxs-chevron-right'></i>
+                                        <a href="services.html">Social Marketing</a>
+                                    </li>
+                                    <li>
+                                        <i class='bx bxs-chevron-right'></i>
+                                        <a href="services.html">Busines Growing</a>
+                                    </li>
+                                    <li>
+                                        <i class='bx bxs-chevron-right'></i>
+                                        <a href="services.html"> Data Analysis</a>
+                                    </li>
+                                    <li>
+                                        <i class='bx bxs-chevron-right'></i>
+                                        <a href="services.html">App Development </a>
+                                    </li>
+                                    <li>
+                                        <i class='bx bxs-chevron-right'></i>
+                                        <a href="services.html"> Web Development</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+
+                        <div class="col-lg-2 col-md-6">
+                            <div class="footer-list">
+                                <h3>Quick Links</h3>
+                                <ul>
+                                    <li>
+                                        <i class='bx bxs-chevron-right'></i>
+                                        <a href="index.html">Home</a>
+                                    </li>
+                                    <li>
+                                        <i class='bx bxs-chevron-right'></i>
+                                        <a href="services.html">Service</a>
+                                    </li>
+                                    <li>
+                                        <i class='bx bxs-chevron-right'></i>
+                                        <a href="about.html">About Us</a>
+                                    </li>
+                                    <li>
+                                        <i class='bx bxs-chevron-right'></i>
+                                        <a href="testimonial.html">Testimonial</a>
+                                    </li>
+                                    <li>
+                                        <i class='bx bxs-chevron-right'></i>
+                                        <a href="blog.html">Blog</a>
+                                    </li>
+                                    <li>
+                                        <i class='bx bxs-chevron-right'></i>
+                                        <a href="contact.html">Contact</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+
+                        <div class="col-lg-3 col-md-6">
+                            <div class="footer-list ml-20">
+                                <h3>Contact Us</h3>
+                                <ul>
+                                    <li>
+                                        <i class='bx bxs-chevron-right'></i>
+                                        <a href="tel:+1123456789">+1  1234 56 789</a>
+                                    </li>
+                                    <li>
+                                        <i class='bx bxs-chevron-right'></i>
+                                        <a href="tel:+19876543210">+1  9876 543 210</a>
+                                    </li>
+                                    <li>
+                                        <i class='bx bxs-chevron-right'></i>
+                                        <a href="mailto:info@bonsa.com">info@bonsa.com</a>
+                                    </li>
+                                    <li>
+                                        <i class='bx bxs-chevron-right'></i>
+                                        <a href="mailto:hello@bonsa.com">hello@bonsa.com</a>
+                                    </li>
+                                    <li>
+                                        <i class='bx bxs-chevron-right'></i>
+                                        28/A Street, New York, USA
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
-            <hr class="footer-devider">
-			<div class="footerrow2 flex-i justify-between">
-				<p class="footer-copyright">
-					Design & Development Skilledtech.Co
-				</p>
-				<p class="footer-copyright">
-					Copyright © 2022 Copyright Viscount Company.
-				</p>
-			</div>
-			
-        </div>
-	</footer>
+
+            <div class="footer-bottom">
+                <div class="container">
+                    <div class="row align-items-center">
+                        <div class="col-lg-12">
+                            <div class="bottom-text text-center">
+                                <p>
+                                    Copyright @Bonsa. All Rights Reserved by 
+                                    <a href="https://hibootstrap.com/" target="_blank">HiBootstrap</a> 
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+        <!-- Footer Area End -->
 </template>

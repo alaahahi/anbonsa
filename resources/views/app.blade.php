@@ -3,23 +3,35 @@
     <head>
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link href="/assets/images/favicon.png" rel="icon">
-        <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,800&display=swap" rel="stylesheet">
-        <!-- font aweasome -->
-        <link rel="stylesheet" href="https://kit.fontawesome.com/d3eb7bac5e.css" crossorigin="anonymous">
-        <!-- bootstrap 5.2.2 -->
-        <link href="/assets/css/bootstrap.min.css" rel="stylesheet">
-        <!-- fonts -->
-        <!-- Main Stylesheet File -->
-        <link href="/assets/css/ahsan.css" rel="stylesheet">
-        <link href="/assets/css/style.css" rel="stylesheet">
-        <link href="/assets/css/home.css" rel="stylesheet">
-        <link href="/assets/css/home-about.css" rel="stylesheet">
-        <link href="/assets/css/rtl.css" rel="stylesheet">
-    	<link href="assets/css/footer1.css" rel="stylesheet">
+        <!-- Bootstrap CSS -->
+        <link rel="stylesheet" href="/assets/css/bootstrap.min.css"> 
+        <!-- Owl Carousel CSS -->
+        <link rel="stylesheet" href="/assets/css/owl.theme.default.min.css">
+        <link rel="stylesheet" href="/assets/css/owl.carousel.min.css">
+        <!-- Magnific Popup CSS -->
+        <link rel="stylesheet" href="/assets/css/magnific-popup.min.css">
+        <!-- Animate Min CSS -->
+        <link rel="stylesheet" href="/assets/css/animate.min.css">
+        <!-- Boxicons CSS --> 
+        <link rel="stylesheet" href="/assets/css/boxicons.min.css">
+        <!-- Flaticon CSS -->
+        <link rel="stylesheet" href="/assets/fonts/flaticon.css">
+        <!-- Meanmenu CSS -->
+        <link rel="stylesheet" href="/assets/css/meanmenu.min.css">
+        <!-- Style CSS -->
+        <link rel="stylesheet" href="/assets/css/style.css">
+        <!-- Responsive CSS -->
+        <link rel="stylesheet" href="/assets/css/responsive.css">
+        <!-- Theme Dark CSS -->
+        <link rel="stylesheet" href="/assets/css/theme-dark.css">
 
+        <!-- Title -->
+        <title>Bonsa - SEO & Marketing Company HTML Template</title>
 
-        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/animate.css@3.5.2/animate.min.css">
+        <!-- Favicon -->
+        <link rel="icon" type="image/png" href="assets/img/favicon.png">
+        
+        
 
     
     
@@ -31,10 +43,26 @@
         <div class="app">
         @inertia
 
-
+        <!-- Jquery Min JS -->
+        <script src="/assets/js/jquery.min.js"></script>
+        <!-- Bootstrap Bundle Min JS -->
         <script src="/assets/js/bootstrap.bundle.min.js"></script>
-        <script src="/assets/js/scripts.js"></script>
-        {{-- <script src="/assets/js/public/scripts.js"></script> --}}
+        <!-- Meanmenu JS -->
+        <script src="/assets/js/meanmenu.min.js"></script>
+        <!-- Owl Carousel JS -->
+        <script src="/assets/js/owl.carousel.min.js"></script>
+        <!-- Magnific Popup JS -->
+        <script src="/assets/js/jquery.magnific-popup.min.js"></script>
+        <!-- Wow JS -->
+        <script src="/assets/js/wow.min.js"></script>
+        <!-- Ajaxchimp Min JS -->
+        <script src="/assets/js/jquery.ajaxchimp.min.js"></script>
+        <!-- Form Validator Min JS -->
+        <script src="/assets/js/form-validator.min.js"></script>
+        <!-- Contact Form JS -->
+        <script src="/assets/js/contact-form-script.js"></script>
+        <!-- Custom JS -->
+        <script src="/assets/js/custom.js"></script>
     
         </div>
     </body>

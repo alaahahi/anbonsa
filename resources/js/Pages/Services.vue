@@ -1,6 +1,6 @@
 <script setup>
 import MainLayout from '@/Layouts/MainLayout.vue';
-import OurServices from '@/Components/OurServices.vue';
+import OurServices from '@/Components/AboutArea.vue';
 import Certifications from '@/Components/Certifications.vue';
 
 </script>

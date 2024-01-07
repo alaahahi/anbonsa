@@ -1,7 +1,7 @@
 <script setup>
 import MainLayout from '@/Layouts/MainLayout.vue';
-import ContactUs from '@/Components/ContactUs.vue';
-import Mapsec from '@/Components/Mapsec.vue';
+import ContactUs from '@/Components/PricingTable.vue';
+import Mapsec from '@/Components/ExpertMembers.vue';
 
 </script>
 <template>
