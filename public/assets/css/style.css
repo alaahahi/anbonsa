@@ -1,0 +1,167 @@
+/* Genral Styling Start */
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+:root{
+  --main : #0368cc;
+}
+body {
+  padding: 0;
+  margin: 0;
+  scroll-behavior: smooth;
+  position: relative;
+  font-family: 'Montserrat', sans-serif;
+}
+img {
+  max-width: 100%;
+}
+ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+a {
+  text-decoration: none;
+  display: block;
+  color: #000;
+}
+a:hover {
+  color: #000;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+ul,
+li,
+a,
+form {
+  margin: 0;
+  padding: 0;
+}
+.d-none {
+  display: none !important;
+}
+.dark .dark-none {
+  display: none !important;
+}
+.dark .dark-show {
+  display: flex !important;
+}
+input,
+button {
+  border: none;
+  outline: none;
+}
+/* *::-webkit-scrollbar {
+  width: 15px;
+}
+*::-webkit-scrollbar-track {
+  background-color: #eb2690;
+}
+*::-webkit-scrollbar-thumb {
+  background-color: #ffcc2a;
+} */
+.swiper-button-next:after, .swiper-button-prev:after{
+  display: none !important;
+}
+.acridtnSlCard .border:before,
+.acridtnSlCard .border:after,
+.acridtnSlCard .border div:before,
+.acridtnSlCard .border div:after {
+  height: 200px;
+  background-color: #005abb;
+  position: absolute;
+  content: "";
+  display: block;
+  -webkit-transition: all 0.4s ease-in-out;
+  transition: all 0.4s ease-in-out;
+}
+
+.acridtnSlCard .border:before,
+.acridtnSlCard .border:after {
+  width: 0;
+  height: 1px;
+}
+
+.acridtnSlCard .border div:before,
+.acridtnSlCard .border div:after {
+  width: 1px;
+  height: 0;
+}
+
+.acridtnSlCard .border.one {
+  left: 0;
+  top: 0;
+  right: 12px;
+  bottom: 12px;
+}
+
+.acridtnSlCard .border.one:before,
+.acridtnSlCard .border.one div:before {
+  left: 0;
+  top: 0;
+}
+
+.acridtnSlCard .border.one:after,
+.acridtnSlCard .border.one div:after {
+  bottom: 0;
+  right: 0;
+}
+
+.acridtnSlCard .border.two {
+  left: 12px;
+  top: 12px;
+  right: 0;
+  bottom: 0;
+}
+
+.acridtnSlCard .border.two:before,
+.acridtnSlCard .border.two div:before {
+  right: 0;
+  top: 0;
+}
+
+.acridtnSlCard .border.two:after,
+.acridtnSlCard .border.two div:after {
+  bottom: 0;
+  left: 0;
+}
+
+.acridtnSlCard a {
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  position: absolute;
+  z-index: 1;
+}
+
+.acridtnSlCard:hover .border:before,
+.acridtnSlCard.hover .border:before,
+.acridtnSlCard:hover .border:after,
+.acridtnSlCard.hover .border:after {
+  width: 100%;
+}
+
+.acridtnSlCard:hover .border div:before,
+.acridtnSlCard.hover .border div:before,
+.acridtnSlCard:hover .border div:after,
+.acridtnSlCard.hover .border div:after {
+  height: 100%;
+}
+
+.viscount-img-bg {
+  background-color: #d0e4fc;
+}
+
+button ,.htbox2Btn  {
+  border-radius: 30px !important
+}
