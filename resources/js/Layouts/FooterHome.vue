@@ -1,8 +1,8 @@
 
 <template>
-        <!-- Footer Area -->
-        <footer id="footer" class="footer-area-bg">
-            <div class="footer-area-top pt-100 pb-70">
+     <!-- Footer Area -->
+	 <footer id="footer" class="footer-area bg-footer">
+            <div class="footer-top">
                 <div class="container">
                     <div class="row">
                         <div class="col-lg-4 col-md-6">
@@ -15,7 +15,7 @@
                                 </div>
 
                                 <div class="newsletter-area">
-                                    <form class="newsletter-form" data-toggle="validator">
+                                    <form class="newsletter-form" data-toggle="validator" method="POST">
                                         <input type="email" class="form-control" placeholder="Email" name="EMAIL" required autocomplete="off">
                                         <button class="subscribe-btn" type="submit">
                                             Subscribe
@@ -127,7 +127,7 @@
                         <div class="col-lg-12">
                             <div class="bottom-text text-center">
                                 <p>
-                                    Copyright @2024 Bonsa. All Rights Reserved by 
+                                    Copyright @Bonsa. All Rights Reserved by 
                                     <a href="https://hibootstrap.com/" target="_blank">HiBootstrap</a> 
                                 </p>
                             </div>

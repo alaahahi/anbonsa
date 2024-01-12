@@ -30,6 +30,10 @@ class PagesController extends Controller
     {
         return Inertia::render('Services');   
     }
+    public function serviceDetails(Request $request)
+    {
+        return Inertia::render('ServiceDetails');   
+    }
     public function ourEvents(Request $request)
     {
         return Inertia::render('OurEvents');   

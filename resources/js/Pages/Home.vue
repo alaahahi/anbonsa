@@ -8,7 +8,7 @@ import AboutArea from '@/Components/AboutArea.vue';
 import PricingTable from '@/Components/PricingTable.vue';
 import ExpertMembers from '@/Components/ExpertMembers.vue';
 import CounterArea from '@/Components/CounterArea.vue';
-import TestimonialArea from '@/Components/TestimonialArea.vue';
+import TestimonialArea from '@/Components/TestimonialAreaHome.vue';
 
 
 import OurPortfolio from '@/Components/OurPortfolio.vue';

@@ -1,69 +1,39 @@
 <script setup>
 import MainLayout from '@/Layouts/MainLayout.vue';
-import HomeAbout from '@/Components/MainBanner.vue';
-import OurVision from '@/Components/BannerSlider.vue';
-import QualityPolicy from '@/Components/QualityPolicy.vue';
-import Mapsec from '@/Components/ExpertMembers.vue';
-
+import AboutArea from '@/Components/AboutArea.vue';
+import PricingTable from '@/Components/PricingTable.vue';
+import CounterArea from '@/Components/CounterArea.vue';
+import TestimonialArea from '@/Components/TestimonialAreaHome.vue';
+import WebsiteRanking from '@/Components/WebsiteRanking.vue';
 
 
 </script>
 <template>
 	<MainLayout>
-    <div class="subbanner">
-		<div class="container-fluid">
-			<ol class="breadcrumb" data-aos="fade-up" data-aos-delay="50"  v-scroll-reveal-fade-up="{delay:'50'}">
-				<li class="breadcrumb-item">
-					<a href="/">Home</a>
-				</li>
-				<li aria-current="page" class="breadcrumb-item active">About Us</li>
-			</ol>
-		</div>
-	</div>
+        <!-- Inner Banner -->
+        <div class="inner-banner inner-bg1">
+            <div class="container">
+                <div class="inner-title text-center">
+                    <h3>About Us</h3>
+                    <ul>
+                        <li>
+                            <a href="/">Home</a>
+                        </li>
+                        <li>
+                            <i class='bx bxs-chevrons-right'></i>
+                        </li>
+                        <li>About</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <!-- Inner Banner End -->
 
-  <HomeAbout />
-  <OurVision />
-  <QualityPolicy />
-  <Mapsec />
+
+  <AboutArea />
+  <PricingTable />
+  <CounterArea />
+  <TestimonialArea />
+  <WebsiteRanking />
 	</MainLayout>
 </template>
-<style scoped>
-.subbanner {
-  height: 280px;
-  display: flex;
-  align-items: flex-end;
-  justify-content: flex-start;
-  background-size: cover;
-  background-position: center;
-  background-image: linear-gradient(rgba(0, 0, 0, 0.616), rgba(0, 0, 0, 0.548)), url("./assets/images/iso3.jpg");
-}
-.subbanner .breadcrumb {
-  display: flex;
-  flex-wrap: wrap;
-  padding: 0 0;
-  margin-bottom: 1rem;
-  list-style: none;
-}
-.subbanner .breadcrumb li a {
-  color: #fff;
-}
-.subbanner .breadcrumb li.active {
-  color: #005abb;
-}
-
-.about2 {
-  padding-bottom: 110px;
-}
-@media (max-width: 1399px) {
-  .about2 {
-    padding-bottom: 10px;
-  }
-}
-
-.values .hmabtBo2__para2 {
-  display: block !important;
-  -webkit-line-clamp: unset !important;
-  overflow: visible !important;
-}
-
-</style>

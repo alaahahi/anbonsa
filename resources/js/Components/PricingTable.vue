@@ -4,7 +4,7 @@
             <div class="container">
                 <div class="section-title text-center">
                     <span>Pricing Table</span>
-                    <h2>We Have Pre-ready Pricing for Our Services</h2>
+                    <h2>We Have Pre-ready Pricing for Our Services </h2>
                     <p>
                         It is a long established fact that a reader will be 
                         distracted by the readable content of a page when looking at its layout.
