@@ -3,8 +3,12 @@
     <head>
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
+        @if(app()->getLocale()=='ar')
         <!-- Bootstrap CSS -->
-        <link rel="stylesheet" href="/assets/css/bootstrap.min.css"> 
+        <link rel="stylesheet" href="/assets/css/bootstrap.rtl.min.css">
+        @else
+        <link rel="stylesheet" href="/assets/css/bootstrap.min.css">
+        @endif
         <!-- Owl Carousel CSS -->
         <link rel="stylesheet" href="/assets/css/owl.theme.default.min.css">
         <link rel="stylesheet" href="/assets/css/owl.carousel.min.css">
@@ -30,9 +34,9 @@
 
         <!-- Favicon -->
         <link rel="icon" type="image/png" href="/assets/img/favicon.png">
-        
-        
-
+        @if(app()->getLocale()=='ar')
+        <link rel="stylesheet" href="/assets/css/rtl.css">
+        @endif
     
     
         @routes

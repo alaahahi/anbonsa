@@ -140,7 +140,9 @@ const switchLocale = async (locale) => {
                             </ul>
 
                             <div class="menu-btn">
-                                <Link href="#" class="seo-btn">SEO Score</Link>
+                                <Link href="#" class="seo-btn mx-2">SEO Score</Link>
+                                <button   @click="switchLocale('ar')" class="seo-btn" v-if="language=='en'" style="position: relative;top: -16px;">AR</button>
+                                <button   @click="switchLocale('en')" class="seo-btn" v-if="language=='ar'" style="position: relative;top: -16px;">EN</button>
                             </div>
                         </div>
                     </nav>
