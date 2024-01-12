@@ -31,8 +31,18 @@ swiperRef.slidePrev();
                         by the readable content of a page when looking at its layout.
                     </p>
                 </div>
-                <div class="portfolio-slider pt-45 owl-carousel owl-theme">
-                    <div class="portfolio-item">
+                <div class="pt-45">
+                <swiper
+                    class="portfolio-slider "
+                    ref="{swiperRef}"
+                    :navigation="false"
+                    :slides-per-view="3"
+                    :space-between="10"
+                    :speed="800"
+                    @swiper="setSwiperRef"
+                
+                    >
+                    <swiper-slide class="portfolio-item">
                         <div class="portfolio-img">
                             <a href="portfolio.html">
                                 <img src="/assets/img/portfolio/1.jpg" alt="Portfolio Images">
@@ -45,9 +55,9 @@ swiperRef.slidePrev();
                                 <i class='bx bxs-chevron-right'></i>
                             </div>
                         </div>
-                    </div>
+                    </swiper-slide>
 
-                    <div class="portfolio-item">
+                    <swiper-slide class="portfolio-item">
                         <div class="portfolio-img">
                             <a href="portfolio.html">
                                 <img src="/assets/img/portfolio/2.jpg" alt="Portfolio Images">
@@ -60,9 +70,9 @@ swiperRef.slidePrev();
                                 <i class='bx bxs-chevron-right'></i>
                             </div>
                         </div>
-                    </div>
+                    </swiper-slide>
 
-                    <div class="portfolio-item">
+                    <swiper-slide class="portfolio-item">
                         <div class="portfolio-img">
                             <a href="portfolio.html">
                                 <img src="/assets/img/portfolio/3.jpg" alt="Portfolio Images">
@@ -75,9 +85,9 @@ swiperRef.slidePrev();
                                 <i class='bx bxs-chevron-right'></i>
                             </div>
                         </div>
-                    </div>
+                    </swiper-slide>
 
-                    <div class="portfolio-item">
+                    <swiper-slide class="portfolio-item">
                         <div class="portfolio-img">
                             <a href="portfolio.html">
                                 <img src="/assets/img/portfolio/5.jpg" alt="Portfolio Images">
@@ -90,7 +100,8 @@ swiperRef.slidePrev();
                                 <i class='bx bxs-chevron-right'></i>
                             </div>
                         </div>
-                    </div>
+                    </swiper-slide>
+                </swiper>
                 </div>
             </div>
         </section>

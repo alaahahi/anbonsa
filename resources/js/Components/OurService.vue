@@ -132,7 +132,7 @@ defineProps({
                     </div>
                 </div>
 
-                <div class="col-lg-12" v-if="!isHome">
+                <div class="col-lg-12"  v-if="!route().current('/')">
 						<div class="pagination-area">
 							<nav aria-label="Page navigation example text-center">
 								<ul class="pagination">

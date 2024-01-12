@@ -64,7 +64,7 @@ const switchLocale = async (locale) => {
             </div>
 
             <!-- Menu For Desktop Device -->
-            <div class="main-nav top-nav">
+            <div class="main-nav " :class="{'top-nav':!route().current('/')}">
                 <div class="container">
                     <nav class="navbar navbar-expand-md navbar-light ">
                         <Link class="navbar-brand" href="/">
@@ -77,54 +77,45 @@ const switchLocale = async (locale) => {
                         <div class=" navbar-collapse mean-menu" id="navbarSupportedContent">
                             <ul class="navbar-nav m-auto">
                                 <li class="nav-item">
-                                    <Link href="/" class="nav-link">
+                                    <Link href="/" class="nav-link" :class="{'active':route().current('/')}">
                                         Home 
                                     </Link>
                                 </li>
                                 <li class="nav-item">
-                                    <Link href="/about" class="nav-link active">
+                                    <Link href="/about" class="nav-link" :class="{'active':route().current('about')}">
                                         About
+                                        
                                     </Link>
                                 </li>
                                 <li class="nav-item">
-                                    <Link href="/portfolio" class="nav-link">
+                                    <Link href="/portfolio" class="nav-link" :class="{'active':route().current('portfolio')}">
                                         Portfolio 
                                     </Link>
                                 </li>
                                 <li class="nav-item">
-                                    <Link href="#" class="nav-link">
+                                    <Link href="/services" class="nav-link" :class="{'active':route().current('services')}">
                                         Services 
                                         <i class='bx bxs-chevron-right'></i>
                                     </Link>
                                     <ul class="dropdown-menu">
                                         <li class="nav-item">
-                                            <Link href="services" class="nav-link">
-                                                Services 
-                                            </Link>
-                                        </li>
-                                        <li class="nav-item">
-                                            <Link href="/service-details" class="nav-link">
+                                            <Link href="/service-details" class="nav-link" :class="{'active':route().current('service-details')}">
                                                 Service Details 
                                             </Link>
                                         </li>
                                     </ul>
                                 </li>
                                 <li class="nav-item">
-                                    <Link href="faq" class="nav-link">
+                                    <Link href="/faq" class="nav-link" :class="{'active':route().current('faq')}">
                                         FAQ
                                     </Link>
                                 </li>
                                 <li class="nav-item">
-                                    <Link href="#" class="nav-link">
+                                    <Link href="#" class="nav-link"  :class="{'active':route().current('blog')}">
                                         Blog 
                                         <i class='bx bxs-chevron-right'></i>
                                     </Link>
                                     <ul class="dropdown-menu">
-                                        <li class="nav-item">
-                                            <Link href="/blog" class="nav-link">
-                                                Blog
-                                            </Link>
-                                        </li>
                                         <li class="nav-item">
                                             <Link href="/blog-details/1" class="nav-link">
                                                 Blog Details 
@@ -133,7 +124,7 @@ const switchLocale = async (locale) => {
                                     </ul>
                                 </li>
                                 <li class="nav-item">
-                                    <Link href="/contact" class="nav-link">
+                                    <Link href="/contact" class="nav-link"  :class="{'active':route().current('contact')}">
                                         Contact
                                     </Link>
                                 </li>

@@ -1,22 +1,30 @@
 <script setup>
-import { Swiper, SwiperSlide } from "swiper/vue";
-import 'swiper/css/navigation';
+import {ref} from "vue";
 
-import "swiper/css";
-let swiperRef = null;
+function toggleAnswer(question) {
+  question.isOpen = !question.isOpen;
 
-const setSwiperRef = (swiper) => {
-swiperRef = swiper;
-};
-const slideNext = () => {
-swiperRef.slideNext();
-};
+}
 
-const slidePrev = () => {
-swiperRef.slidePrev();
-};
-
-
+// Example usage:
+const questions = ref([{
+  id: 1,
+  isOpen: true,
+  title:  'Lorem ipsum dolor sit amet.' ,
+  body: 'Lorem ipsum dolor sit, amet consectetur adipisicing elit.' 
+},
+{
+  id: 2,
+  isOpen: false,
+  title:  'Lorem ipsum dolor sit amet.' ,
+  body: 'Lorem ipsum dolor sit, amet consectetur adipisicing elit.' 
+},
+{
+  id: 3,
+  isOpen: false,
+  title:  'Lorem ipsum dolor sit amet.' ,
+  body: 'Lorem ipsum dolor sit, amet consectetur adipisicing elit.' 
+}]);
 </script>
 <template>
  <!-- Faq Area -->
@@ -43,58 +51,15 @@ swiperRef.slidePrev();
 
                         <div class="faq-accordion">
                             <ul class="accordion">
-                                <li class="accordion-item">
-                                    <a class="accordion-title" href="javascript:void(0)">
+                                <li class="accordion-item"     v-for="question in questions" :key="question.id" @click="toggleAnswer(question)">
+                                    <a class="accordion-title" :class="{ 'active': question.isOpen }">
                                         <i class='bx bx-chevron-down'></i>
-                                        Great Research Exparts 
+                                       {{question.title}}
                                     </a>
     
-                                    <div class="accordion-content">
+                                    <div class="accordion-content"  :class="{ 'show': question.isOpen }">
                                         <p> 
-                                            Lorem ipsum dolor sit amet, consectetur adipis
-                                            cing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-                                        </p>
-                                    </div>
-                                </li>
-
-                                <li class="accordion-item">
-                                    <a class="accordion-title" href="javascript:void(0)">
-                                        <i class='bx bx-chevron-down'></i>
-                                        Great Understanding
-                                    </a>
-    
-                                    <div class="accordion-content">
-                                        <p> 
-                                            Lorem ipsum dolor sit amet, consectetur adipis
-                                            cing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-                                        </p>
-                                    </div>
-                                </li>
-
-                                <li class="accordion-item">
-                                    <a class="accordion-title" href="javascript:void(0)">
-                                        <i class='bx bx-chevron-down'></i>
-                                        Top Ranking 
-                                    </a>
-    
-                                    <div class="accordion-content">
-                                        <p>
-                                            Lorem ipsum dolor sit amet, consectetur adipis
-                                            cing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-                                        </p>
-                                    </div>
-                                </li>
-
-                                <li class="accordion-item">
-                                    <a class="accordion-title active" href="javascript:void(0)">
-                                        <i class='bx bx-chevron-down'></i>
-                                        100% Trusted
-                                    </a>
-    
-                                    <div class="accordion-content show">
-                                        <p>
-                                            Lorem ipsum dolor sit amet, consectetur adipis
-                                            cing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                                            {{question.body}}
                                         </p>
                                     </div>
                                 </li>

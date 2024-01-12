@@ -169,7 +169,7 @@ img {
 Default Btn Style 
 ===================================*/
 .default-btn {
-  background-color: #4356d6;
+  background-color: #4356d6 !important;
   padding: 12px 42px;
   color: #fff;
   border-radius: 50px;
