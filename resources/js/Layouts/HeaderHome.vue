@@ -2,8 +2,7 @@
 import { ref, onUnmounted } from 'vue';
 import { useI18n } from "vue-i18n";
 import { Link } from '@inertiajs/inertia-vue3';
-import ResponsiveNav from '@/Components/ResponsiveNav.vue';
-import DarkModeToggle from '@/Components/DarkToggle.vue';
+
 import axios from 'axios';
 import {  onMounted, onBeforeUnmount } from "vue";
 

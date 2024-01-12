@@ -34,9 +34,9 @@ class PagesController extends Controller
     {
         return Inertia::render('ServiceDetails');   
     }
-    public function ourEvents(Request $request)
+    public function portfolio(Request $request)
     {
-        return Inertia::render('OurEvents');   
+        return Inertia::render('Portfolio');   
     }
     public function ourLibrary(Request $request)
     {
