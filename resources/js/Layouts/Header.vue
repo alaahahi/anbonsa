@@ -78,7 +78,7 @@ const switchLocale = async (locale) => {
                             <ul class="navbar-nav m-auto">
                                 <li class="nav-item">
                                     <Link href="/" class="nav-link" :class="{'active':route().current('/')}">
-                                        Home 
+                                        {{$t('home')}} 
                                     </Link>
                                 </li>
                                 <li class="nav-item">
@@ -111,7 +111,7 @@ const switchLocale = async (locale) => {
                                     </Link>
                                 </li>
                                 <li class="nav-item">
-                                    <Link href="#" class="nav-link"  :class="{'active':route().current('blog')}">
+                                    <Link href="/blog" class="nav-link"  :class="{'active':route().current('blog')}">
                                         Blog 
                                         <i class='bx bxs-chevron-right'></i>
                                     </Link>

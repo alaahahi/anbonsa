@@ -1,3 +1,26 @@
+
+
+<script setup>
+import { Swiper, SwiperSlide } from "swiper/vue";
+import 'swiper/css/navigation';
+import { Autoplay } from "swiper/modules";
+
+import "swiper/css";
+let swiperRef = null;
+
+const setSwiperRef = (swiper) => {
+swiperRef = swiper;
+};
+const slideNext = () => {
+swiperRef.slideNext();
+};
+
+const slidePrev = () => {
+swiperRef.slidePrev();
+};
+
+
+</script>
 <template>
             <!-- Testimonial Area -->
             <div class="testimonial-area pt-100 pb-70">
@@ -12,13 +35,26 @@
                 </div>
                 <div class="row align-items-center">
                     <div class="col-lg-7 col-xxl-6">
-                        <div class="testimonial-slider">
+                        <div class="testimonial-slider owl-theme">
                             <div class="testimonial-icon">
                                 <i class='bx bxs-quote-alt-right'></i>
                             </div>
-                            
-                            <div class="testimonial-item-slider owl-carousel owl-theme">
-                                <div class="testimonial-item">
+                                <swiper
+                                ref="{swiperRef}"
+                                :centeredSlides="true"
+                                :centeredSlidesBounds="true"
+                                :modules="[Autoplay]"
+                                :navigation="false"
+                                :slides-per-view="1"
+                                :space-between="10"
+                                :speed="800"
+                                @swiper="setSwiperRef"
+                                :autoplay="{
+                                delay:2000,
+                                disableOnInteraction: false,
+                                }"
+                                >
+                                <swiper-slide   class="testimonial-item">
                                     <div class="testimonial-item-img">
                                         <img src="/assets/img/testimonial/t1.png" alt="Testimonial Images">
                                     </div>
@@ -27,9 +63,9 @@
                                         Restaurants range from inexpensive and informal lunching or dining places 
                                         catering to people working nearby, with modest food served in simple settings at low prices.
                                      </p>
-                                </div>
+                                </swiper-slide>
 
-                                <div class="testimonial-item">
+                                <swiper-slide class="testimonial-item">
                                     <div class="testimonial-item-img">
                                         <img src="/assets/img/testimonial/t2.png" alt="Testimonial Images">
                                     </div>
@@ -38,9 +74,9 @@
                                         Restaurants range from inexpensive and informal lunching or dining places 
                                         catering to people working nearby, with modest food served in simple settings at low prices.
                                      </p>
-                                </div>
+                                </swiper-slide>
 
-                                <div class="testimonial-item">
+                                <swiper-slide class="testimonial-item">
                                     <div class="testimonial-item-img">
                                         <img src="/assets/img/testimonial/t3.png" alt="Testimonial Images">
                                     </div>
@@ -49,8 +85,16 @@
                                         Restaurants range from inexpensive and informal lunching or dining places 
                                         catering to people working nearby, with modest food served in simple settings at low prices.
                                      </p>
-                                </div>
-                            </div>
+                                </swiper-slide>
+                            </swiper>
+                            <div class="owl-nav cont">
+                                <button type="button" role="presentation" class="owl-prev mx-2" @click="slidePrev">
+                                    <i class="bx bx-left-arrow-alt"></i>
+                                </button>
+                                <button type="button" role="presentation" class="owl-next mx-2" @click="slideNext">
+                                    <i class="bx bx-right-arrow-alt"></i>
+                                </button>
+                            </div>  
                         </div>
                     </div>
 

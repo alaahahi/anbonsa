@@ -3,7 +3,7 @@ import MainLayout from '@/Layouts/MainLayout.vue';
 import AboutArea from '@/Components/AboutArea.vue';
 import PricingTable from '@/Components/PricingTable.vue';
 import CounterArea from '@/Components/CounterArea.vue';
-import TestimonialArea from '@/Components/TestimonialAreaHome.vue';
+import TestimonialArea from '@/Components/TestimonialArea.vue';
 import WebsiteRanking from '@/Components/WebsiteRanking.vue';
 
 

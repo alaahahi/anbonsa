@@ -1,3 +1,25 @@
+
+<script setup>
+import { Swiper, SwiperSlide } from "swiper/vue";
+import 'swiper/css/navigation';
+import { Autoplay } from "swiper/modules";
+
+import "swiper/css";
+let swiperRef = null;
+
+const setSwiperRef = (swiper) => {
+swiperRef = swiper;
+};
+const slideNext = () => {
+swiperRef.slideNext();
+};
+
+const slidePrev = () => {
+swiperRef.slidePrev();
+};
+
+
+</script>
 <template>
                  <!-- Client Area -->
         <div class="client-area ptb-100 pb-70">
@@ -10,9 +32,21 @@
                         the readable content of a page when looking at its layout.
                     </p>
                 </div>
-
-                <div class="client-slider owl-carousel owl-theme">
-                    <div class="client-item">
+                    <swiper
+                    class="client-slider  owl-theme pb-5 mx-5"
+                    ref="{swiperRef}"
+                    :modules="[Autoplay]"
+                    :navigation="false"
+                    :slides-per-view="3"
+                    :space-between="30"
+                    :speed="800"
+                    @swiper="setSwiperRef"
+                    :autoplay="{
+                    delay:2000,
+                    disableOnInteraction: false,
+                    }"
+                    >
+                    <swiper-slide class="client-item">
                         <div class="client-item-img">
                             <img src="/assets/img/testimonial/t1.png" alt="Testimonial Images">
                         </div>
@@ -21,9 +55,9 @@
                             Restaurants range from inexpensive and informal lunching or dining places 
                             catering to people working nearby, with modest food served in simple settings at low prices.
                         </p>
-                    </div>
+                    </swiper-slide>
 
-                    <div class="client-item">
+                    <swiper-slide class="client-item">
                         <div class="client-item-img">
                             <img src="/assets/img/testimonial/t4.png" alt="Testimonial Images">
                         </div>
@@ -32,9 +66,9 @@
                             Restaurants range from inexpensive and informal lunching or dining places 
                             catering to people working nearby, with modest food served in simple settings at low prices.
                         </p>
-                    </div>
+                    </swiper-slide>
 
-                    <div class="client-item">
+                    <swiper-slide class="client-item">
                         <div class="client-item-img">
                             <img src="/assets/img/testimonial/t5.png" alt="Testimonial Images">
                         </div>
@@ -43,8 +77,8 @@
                             Restaurants range from inexpensive and informal lunching or dining places 
                             catering to people working nearby, with modest food served in simple settings at low prices.
                         </p>
-                    </div>
-                    <div class="client-item">
+                    </swiper-slide>
+                    <swiper-slide class="client-item">
                         <div class="client-item-img">
                             <img src="/assets/img/testimonial/t3.png" alt="Testimonial Images">
                         </div>
@@ -53,8 +87,17 @@
                             Restaurants range from inexpensive and informal lunching or dining places 
                             catering to people working nearby, with modest food served in simple settings at low prices.
                         </p>
-                    </div>
-                </div>
+                    </swiper-slide>
+                    <div class="owl-nav cont">
+                                <button type="button" role="presentation" class="owl-prev mx-2" @click="slidePrev">
+                                    <i class="bx bx-left-arrow-alt"></i>
+                                </button>
+                                <button type="button" role="presentation" class="owl-next mx-2" @click="slideNext">
+                                    <i class="bx bx-right-arrow-alt"></i>
+                                </button>
+                    </div> 
+                </swiper>
+      
             </div>
         </div>
         <!-- Client Area End -->

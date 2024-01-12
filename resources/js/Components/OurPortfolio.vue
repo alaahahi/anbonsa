@@ -2,6 +2,7 @@
 <script setup>
 import { Swiper, SwiperSlide } from "swiper/vue";
 import 'swiper/css/navigation';
+import { Autoplay } from "swiper/modules";
 
 import "swiper/css";
 let swiperRef = null;
@@ -35,12 +36,16 @@ swiperRef.slidePrev();
                 <swiper
                     class="portfolio-slider "
                     ref="{swiperRef}"
+                    :modules="[Autoplay]"
                     :navigation="false"
                     :slides-per-view="3"
                     :space-between="10"
                     :speed="800"
                     @swiper="setSwiperRef"
-                
+                    :autoplay="{
+                    delay:2000,
+                    disableOnInteraction: false,
+                    }"
                     >
                     <swiper-slide class="portfolio-item">
                         <div class="portfolio-img">
@@ -101,9 +106,22 @@ swiperRef.slidePrev();
                             </div>
                         </div>
                     </swiper-slide>
+                    <div class="owl-nav cont">
+                        <button type="button" role="presentation" class="owl-prev mx-2" @click="slidePrev">
+                            <i class="bx bx-left-arrow-alt"></i>
+                        </button>
+                        <button type="button" role="presentation" class="owl-next mx-2" @click="slideNext">
+                            <i class="bx bx-right-arrow-alt"></i>
+                        </button>
+                    </div>                
                 </swiper>
                 </div>
             </div>
         </section>
         <!-- Portfolio Area End -->
 </template>
+<style>
+.swiper-wrapper {
+z-index: 0 !important;
+}
+</style>

@@ -9,6 +9,7 @@ import PricingTable from '@/Components/PricingTable.vue';
 import ExpertMembers from '@/Components/ExpertMembers.vue';
 import CounterArea from '@/Components/CounterArea.vue';
 import TestimonialArea from '@/Components/TestimonialAreaHome.vue';
+import HomeLatestPost from '@/Components/HomeLatestPost.vue';
 
 
 import OurPortfolio from '@/Components/OurPortfolio.vue';
@@ -121,6 +122,7 @@ function submit() {
     <ExpertMembers />
     <CounterArea />
     <TestimonialArea />
+    <HomeLatestPost />
 
   </MainLayout>
 </template>
