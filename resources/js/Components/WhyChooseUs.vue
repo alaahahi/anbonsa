@@ -25,7 +25,7 @@ swiperRef.slidePrev();
                 <div class="row align-items-center">
                     <div class="col-lg-6 col-xxl-7">
                         <div class="faq-img">
-                            <img src="assets/img/faq/1.png" alt="fAQ Images">
+                            <img src="/assets/img/faq/1.png" alt="fAQ Images">
                         </div>
                     </div>
 

@@ -20,7 +20,7 @@
                             <div class="testimonial-item-slider owl-carousel owl-theme">
                                 <div class="testimonial-item">
                                     <div class="testimonial-item-img">
-                                        <img src="assets/img/testimonial/t1.png" alt="Testimonial Images">
+                                        <img src="/assets/img/testimonial/t1.png" alt="Testimonial Images">
                                     </div>
                                     <h3>John Doe</h3>
                                     <p>
@@ -31,7 +31,7 @@
 
                                 <div class="testimonial-item">
                                     <div class="testimonial-item-img">
-                                        <img src="assets/img/testimonial/t2.png" alt="Testimonial Images">
+                                        <img src="/assets/img/testimonial/t2.png" alt="Testimonial Images">
                                     </div>
                                     <h3>Knot Doe</h3>
                                     <p>
@@ -42,7 +42,7 @@
 
                                 <div class="testimonial-item">
                                     <div class="testimonial-item-img">
-                                        <img src="assets/img/testimonial/t3.png" alt="Testimonial Images">
+                                        <img src="/assets/img/testimonial/t3.png" alt="Testimonial Images">
                                     </div>
                                     <h3>Evanaa</h3>
                                     <p>
@@ -56,17 +56,17 @@
 
                     <div class="col-lg-5 col-xxl-6">
                         <div class="testimonial-img">
-                            <img src="assets/img/testimonial/1.png" alt="Testimonial Images">
+                            <img src="/assets/img/testimonial/1.png" alt="Testimonial Images">
                         </div>
                     </div>
                 </div>
             </div>
 
             <div class="shape-left">
-                <img src="assets/img/testimonial/shape-left.png" alt="Images">
+                <img src="/assets/img/testimonial/shape-left.png" alt="Images">
             </div>
             <div class="shape-right">
-                <img src="assets/img/testimonial/shape-right.png" alt="Images">
+                <img src="/assets/img/testimonial/shape-right.png" alt="Images">
             </div>
         </div>
         <!-- Testimonial Area End -->

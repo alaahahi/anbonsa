@@ -38,7 +38,7 @@ defineProps({
                     <div class="col-lg-4 col-sm-6">
                         <div class="service-card">
                             <a href="service-details.html">
-                                <img src="assets/img/service-icon/1.png" alt="Images">
+                                <img src="/assets/img/service-icon/1.png" alt="Images">
                             </a>
                             <a href="service-details.html">
                                 <h3>SEO Optimization</h3>
@@ -54,7 +54,7 @@ defineProps({
                     <div class="col-lg-4 col-sm-6">
                         <div class="service-card">
                             <a href="service-details.html">
-                                <img src="assets/img/service-icon/2.png" alt="Images">
+                                <img src="/assets/img/service-icon/2.png" alt="Images">
                             </a>
                             <a href="service-details.html">
                                 <h3>Social Marketing</h3>
@@ -70,7 +70,7 @@ defineProps({
                     <div class="col-lg-4 col-sm-6">
                         <div class="service-card">
                             <a href="service-details.html">
-                                <img src="assets/img/service-icon/3.png" alt="Images">
+                                <img src="/assets/img/service-icon/3.png" alt="Images">
                             </a>
                             <a href="service-details.html">
                                 <h3>Content Marketing</h3>
@@ -86,7 +86,7 @@ defineProps({
                     <div class="col-lg-4 col-sm-6">
                         <div class="service-card">
                             <a href="service-details.html">
-                                <img src="assets/img/service-icon/4.png" alt="Images">
+                                <img src="/assets/img/service-icon/4.png" alt="Images">
                             </a>
                             <a href="service-details.html">
                                 <h3>Analytical Analysis</h3>
@@ -102,7 +102,7 @@ defineProps({
                     <div class="col-lg-4 col-sm-6">
                         <div class="service-card">
                             <a href="service-details.html">
-                                <img src="assets/img/service-icon/5.png" alt="Images">
+                                <img src="/assets/img/service-icon/5.png" alt="Images">
                             </a>
                             <a href="service-details.html">
                                 <h3>App Development</h3>
@@ -118,7 +118,7 @@ defineProps({
                     <div class="col-lg-4 col-sm-6">
                         <div class="service-card">
                             <a href="service-details.html">
-                                <img src="assets/img/service-icon/6.png" alt="Images">
+                                <img src="/assets/img/service-icon/6.png" alt="Images">
                             </a>
                             <a href="service-details.html">
                                 <h3>Web Development</h3>

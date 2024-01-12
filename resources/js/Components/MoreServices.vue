@@ -6,7 +6,7 @@
                     <div class="col-lg-8">
                         <div class="service-dtls-content">
                             <div class="service-dtls-img">
-                                <img src="assets/img/service-icon/service-dtls.jpg" alt="Service Image">
+                                <img src="/assets/img/service-icon/service-dtls.jpg" alt="Service Image">
                             </div>
                             <h2>Social Business Growth & Marketing</h2>
                             <p>

@@ -15,7 +15,7 @@
                         <div class="blog-card">
                             <div class="blog-img">
                                 <a href="blog-details.html">
-                                    <img src="assets/img/blog/1.jpg" alt="Blog Images">
+                                    <img src="/assets/img/blog/1.jpg" alt="Blog Images">
                                 </a>
                             </div>
                             <div class="blog-content">
@@ -34,7 +34,7 @@
                         <div class="blog-card">
                             <div class="blog-img">
                                 <a href="blog-details.html">
-                                    <img src="assets/img/blog/2.jpg" alt="Blog Images">
+                                    <img src="/assets/img/blog/2.jpg" alt="Blog Images">
                                 </a>
                             </div>
                             <div class="blog-content">
@@ -53,7 +53,7 @@
                         <div class="blog-card">
                             <div class="blog-img">
                                 <a href="blog-details.html">
-                                    <img src="assets/img/blog/3.jpg" alt="Blog Images">
+                                    <img src="/assets/img/blog/3.jpg" alt="Blog Images">
                                 </a>
                             </div>
                             <div class="blog-content">

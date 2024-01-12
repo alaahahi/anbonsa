@@ -60,8 +60,8 @@ const switchLocale = async (locale) => {
             <!-- Menu For Mobile Device -->
             <div class="mobile-nav">
                 <Link href="/" class="logo">
-                    <img src="assets/img/logo.png" class="logo-one" alt="Logo">
-                    <img src="assets/img/sticky-logo.png" class="logo-two" alt="Logo">
+                    <img src="/assets/img/logo.png" class="logo-one" alt="Logo">
+                    <img src="/assets/img/sticky-logo.png" class="logo-two" alt="Logo">
                 </Link>
             </div>
 
@@ -70,10 +70,10 @@ const switchLocale = async (locale) => {
                 <div class="container">
                     <nav class="navbar navbar-expand-md navbar-light ">
                         <Link href="/" class="navbar-brand" >
-                            <img src="assets/img/logo.png" alt="Logo">
+                            <img src="/assets/img/logo.png" alt="Logo">
                         </link>
                         <Link href="/" class="navbar-brand-sticky" >
-                            <img src="assets/img/sticky-logo.png" alt="Logo">
+                            <img src="/assets/img/sticky-logo.png" alt="Logo">
                         </Link>
 
                         <div class=" navbar-collapse mean-menu" id="navbarSupportedContent">
@@ -208,7 +208,7 @@ const switchLocale = async (locale) => {
                                             </Link>
                                         </li>
                                         <li class="nav-item">
-                                            <Link  href="blog-details" class="nav-link">
+                                            <Link  href="blog-details/2" class="nav-link">
                                                 Blog Details 
                                             </Link>
                                         </li>

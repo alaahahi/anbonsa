@@ -35,7 +35,7 @@ swiperRef.slidePrev();
                     <div class="portfolio-item">
                         <div class="portfolio-img">
                             <a href="portfolio.html">
-                                <img src="assets/img/portfolio/1.jpg" alt="Portfolio Images">
+                                <img src="/assets/img/portfolio/1.jpg" alt="Portfolio Images">
                             </a>
                             <div class="portfolio-tag">
                                 <a href="#"><span>Marketing</span></a>
@@ -50,7 +50,7 @@ swiperRef.slidePrev();
                     <div class="portfolio-item">
                         <div class="portfolio-img">
                             <a href="portfolio.html">
-                                <img src="assets/img/portfolio/2.jpg" alt="Portfolio Images">
+                                <img src="/assets/img/portfolio/2.jpg" alt="Portfolio Images">
                             </a>
                             <div class="portfolio-tag">
                                 <a href="#"><span>Research</span></a>
@@ -65,7 +65,7 @@ swiperRef.slidePrev();
                     <div class="portfolio-item">
                         <div class="portfolio-img">
                             <a href="portfolio.html">
-                                <img src="assets/img/portfolio/3.jpg" alt="Portfolio Images">
+                                <img src="/assets/img/portfolio/3.jpg" alt="Portfolio Images">
                             </a>
                             <div class="portfolio-tag">
                                 <a href="#"><span>Optimizing</span></a>
@@ -80,7 +80,7 @@ swiperRef.slidePrev();
                     <div class="portfolio-item">
                         <div class="portfolio-img">
                             <a href="portfolio.html">
-                                <img src="assets/img/portfolio/5.jpg" alt="Portfolio Images">
+                                <img src="/assets/img/portfolio/5.jpg" alt="Portfolio Images">
                             </a>
                             <div class="portfolio-tag">
                                 <a href="#"><span>Development</span></a>

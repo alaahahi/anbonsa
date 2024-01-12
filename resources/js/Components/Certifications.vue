@@ -34,7 +34,7 @@
 						<div class="tab-pane fade show active" id="c1" role="tabpanel" tabindex="0">
 							<div class="sercrd">
 								<div class="sercrdImgHol flex-a">
-									<img src="assets/images/about.bg.webp" alt="" class="sercrd__img">
+									<img src="/assets/images/about.bg.webp" alt="" class="sercrd__img">
 								</div>
 								<div class="sercrdBody">
 									<h6 class="sercrdBody__h6">Certifications Process</h6>
@@ -216,7 +216,7 @@
 						<div class="tab-pane fade" id="c2" role="tabpanel" tabindex="0">
 							<div class="sercrd">
 								<div class="sercrdImgHol flex-a">
-									<img src="assets/images/standard-quality-control-collage.jpg" alt="" class="sercrd__img">
+									<img src="/assets/images/standard-quality-control-collage.jpg" alt="" class="sercrd__img">
 								</div>
 								<div class="sercrdBody">
 									<h2 class="sercrdBody__link"> ISO Standards and certifications by Viscount </h2>
@@ -262,7 +262,7 @@
 						<div class="tab-pane fade" id="c3" role="tabpanel" tabindex="0">
 							<div class="sercrd">
 								<div class="sercrdImgHol flex-a">
-									<img src="assets/images/iso.jpg" alt="" class="sercrd__img">
+									<img src="/assets/images/iso.jpg" alt="" class="sercrd__img">
 								</div>
 								<div class="sercrdBody">
 									<h2 class="sercrdBody__link"> COMPANY PROFILE </h2>
@@ -282,7 +282,7 @@
 						<div class="tab-pane fade" id="c4" role="tabpanel" tabindex="0">
 							<div class="sercrd">
 								<div class="sercrdImgHol flex-a">
-									<img src="assets/images/iso3.jpg" alt="" class="sercrd__img">
+									<img src="/assets/images/iso3.jpg" alt="" class="sercrd__img">
 								</div>
 								<div class="sercrdBody">
 									<h2 class="sercrdBody__link"> INFORMATIVE QUESTIONNAIRE </h2>

@@ -1,46 +1,37 @@
 <script setup>
 import MainLayout from '@/Layouts/MainLayout.vue';
-import ContactUs from '@/Components/PricingTable.vue';
-import Mapsec from '@/Components/ExpertMembers.vue';
+import DropMessage from '@/Components/DropMessage.vue';
+import ContactArea from '@/Components/ContactArea.vue';
+import Mapsec from '@/Components/Mapsec.vue';
+
+
+import WebsiteRanking from '@/Components/WebsiteRanking.vue';
 
 </script>
 <template>
     <MainLayout>
-      <div class="subbanner">
-        <div class="container-fluid">
-          <ol class="breadcrumb" data-aos="fade-up" data-aos-delay="50" v-scroll-reveal-fade-up="{delay:'50'}">
-            <li class="breadcrumb-item">
-              <a href="/">Home</a>
-            </li>
-            <li aria-current="page" class="breadcrumb-item active">Contact</li>
-          </ol>
+
+        <!-- Inner Banner -->
+        <div class="inner-banner inner-bg6">
+            <div class="container">
+                <div class="inner-title text-center">
+                    <h3>Contact Us</h3>
+                    <ul>
+                        <li>
+                            <a href="index.html">Home</a>
+                        </li>
+                        <li>
+                            <i class='bx bxs-chevrons-right'></i>
+                        </li>
+                        <li>Contact</li>
+                    </ul>
+                </div>
+            </div>
         </div>
-      </div>
-      <ContactUs />
-      <Mapsec />
+        <!-- Inner Banner End -->
+        <ContactArea />
+        <DropMessage />
+        <Mapsec />
+        <WebsiteRanking />
     </MainLayout>
 </template>
-<style scoped>
-.subbanner {
-  height: 280px;
-  display: flex;
-  align-items: flex-end;
-  justify-content: flex-start;
-  background-size: cover;
-  background-position: center;
-  background-image: linear-gradient(rgba(0, 0, 0, 0.616), rgba(0, 0, 0, 0.548)), url("./assets/images/iso3.jpg");
-}
-.subbanner .breadcrumb {
-  display: flex;
-  flex-wrap: wrap;
-  padding: 0 0;
-  margin-bottom: 1rem;
-  list-style: none;
-}
-.subbanner .breadcrumb li a {
-  color: #fff;
-}
-.subbanner .breadcrumb li.active {
-  color: #005abb;
-}
-</style>

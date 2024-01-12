@@ -5,7 +5,7 @@
                 <div class="row align-items-center">
                     <div class="col-lg-5 col-xxl-6 ps-0">
                         <div class="about-img">
-                            <img src="assets/img/about/1.png" alt="About Images">
+                            <img src="/assets/img/about/1.png" alt="About Images">
                         </div>
                     </div>
 
@@ -34,7 +34,7 @@
                 </div>
             </div>
             <div class="about-shape">
-                <img src="assets/img/shape/right-side.png" alt="Shape Images">
+                <img src="/assets/img/shape/right-side.png" alt="Shape Images">
             </div>
         </div>
         <!-- About Area End -->

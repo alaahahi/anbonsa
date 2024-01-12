@@ -29,7 +29,7 @@
         <title>Bonsa - SEO & Marketing Company HTML Template</title>
 
         <!-- Favicon -->
-        <link rel="icon" type="image/png" href="assets/img/favicon.png">
+        <link rel="icon" type="image/png" href="/assets/img/favicon.png">
         
         
 

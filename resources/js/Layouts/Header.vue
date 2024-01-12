@@ -59,8 +59,7 @@ const switchLocale = async (locale) => {
             <!-- Menu For Mobile Device -->
              <div class="mobile-nav">
                 <Link href="/" class="logo">
-                    <img src="assets/img/logo.png" class="logo-one" alt="Logo">
-                    <img src="assets/img/sticky-logo.png" class="logo-two" alt="Logo">
+                    <img src="/assets/img/logo.png" class="logo-one" alt="Logo">
                 </Link>
             </div>
 
@@ -69,10 +68,10 @@ const switchLocale = async (locale) => {
                 <div class="container">
                     <nav class="navbar navbar-expand-md navbar-light ">
                         <Link class="navbar-brand" href="/">
-                            <img src="assets/img/logo.png" alt="Logo">
+                            <img src="/assets/img/logo.png" alt="Logo">
                         </Link>
                         <Link class="navbar-brand-sticky" href="/">
-                            <img src="assets/img/sticky-logo.png" alt="Logo">
+                            <img src="/assets/img/sticky-logo.png" alt="Logo">
                         </Link>
 
                         <div class=" navbar-collapse mean-menu" id="navbarSupportedContent">
@@ -83,93 +82,14 @@ const switchLocale = async (locale) => {
                                     </Link>
                                 </li>
                                 <li class="nav-item">
-                                    <Link href="about" class="nav-link active">
+                                    <Link href="/about" class="nav-link active">
                                         About
                                     </Link>
                                 </li>
                                 <li class="nav-item">
-                                    <Link href="#" class="nav-link">
-                                        Pages 
-                                        <i class='bx bxs-chevron-right'></i>
+                                    <Link href="/portfolio" class="nav-link">
+                                        Portfolio 
                                     </Link>
-                                    <ul class="dropdown-menu">
-                                        <li class="nav-item">
-                                            <Link href="members" class="nav-link">
-                                                Members
-                                            </Link>
-                                        </li>
-                                        <li class="nav-item">
-                                            <Link href="portfolio" class="nav-link">
-                                                Portfolio
-                                            </Link>
-                                        </li>
-                                        <li class="nav-item">
-                                            <Link href="pricing" class="nav-link">
-                                                Pricing
-                                            </Link>
-                                        </li>
-                                        <li class="nav-item">
-                                            <Link href="404" class="nav-link">
-                                                404 Page
-                                            </Link>
-                                        </li>
-                                        <li class="nav-item">
-                                            <Link href="faq" class="nav-link">
-                                                FAQ
-                                            </Link>
-                                        </li>
-                                        <li class="nav-item">
-                                            <Link href="sign-in" class="nav-link">
-                                                Sign In
-                                            </Link>
-                                        </li>
-                                        <li class="nav-item">
-                                            <Link href="sign-up" class="nav-link">
-                                                Sign Up
-                                            </Link>
-                                        </li>
-                                        <li class="nav-item">
-                                            <Link href="recover-password" class="nav-link">Recover Password</Link>
-                                        </li>
-                                        <li class="nav-item">
-                                            <Link href="terms-condition" class="nav-link">
-                                                Terms & Conditions
-                                            </Link>
-                                        </li>
-                                        <li class="nav-item">
-                                            <Link href="privacy-policy" class="nav-link">
-                                                Privacy Policy
-                                            </Link>
-                                        </li>
-                                        <li class="nav-item">
-                                            <Link href="#" class="nav-link">
-                                                Level 1
-                                                <i class="bx bx-chevron-right"></i>
-                                            </Link>
-                                            <ul class="dropdown-menu">
-                                                <li class="nav-item">
-                                                    <Link href="#" class="nav-link">Level 2</Link>
-                                                </li>
-                                                <li class="nav-item">
-                                                    <Link href="#" class="nav-link">Level 2</Link>
-                                                </li>
-                                                <li class="nav-item">
-                                                    <Link href="#" class="nav-link">
-                                                        Level 2
-                                                        <i class="bx bx-chevron-right"></i>
-                                                    </Link>
-                                                    <ul class="dropdown-menu">
-                                                        <li class="nav-item">
-                                                            <Link href="#" class="nav-link">Level 3</Link>
-                                                        </li>
-                                                        <li class="nav-item">
-                                                            <Link href="#" class="nav-link">Level 3</Link>
-                                                        </li>
-                                                    </ul>
-                                                </li>
-                                            </ul>
-                                        </li>
-                                    </ul>
                                 </li>
                                 <li class="nav-item">
                                     <Link href="#" class="nav-link">
@@ -183,15 +103,15 @@ const switchLocale = async (locale) => {
                                             </Link>
                                         </li>
                                         <li class="nav-item">
-                                            <Link href="service-details" class="nav-link">
+                                            <Link href="/service-details" class="nav-link">
                                                 Service Details 
                                             </Link>
                                         </li>
                                     </ul>
                                 </li>
                                 <li class="nav-item">
-                                    <Link href="testimonial" class="nav-link">
-                                        Testimonial
+                                    <Link href="faq" class="nav-link">
+                                        FAQ
                                     </Link>
                                 </li>
                                 <li class="nav-item">
@@ -201,19 +121,19 @@ const switchLocale = async (locale) => {
                                     </Link>
                                     <ul class="dropdown-menu">
                                         <li class="nav-item">
-                                            <Link href="blog" class="nav-link">
+                                            <Link href="/blog" class="nav-link">
                                                 Blog
                                             </Link>
                                         </li>
                                         <li class="nav-item">
-                                            <Link href="blog-details" class="nav-link">
+                                            <Link href="/blog-details/1" class="nav-link">
                                                 Blog Details 
                                             </Link>
                                         </li>
                                     </ul>
                                 </li>
                                 <li class="nav-item">
-                                    <Link href="contact" class="nav-link">
+                                    <Link href="/contact" class="nav-link">
                                         Contact
                                     </Link>
                                 </li>

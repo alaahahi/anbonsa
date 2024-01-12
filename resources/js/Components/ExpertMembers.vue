@@ -15,7 +15,7 @@
                         <div class="member-card">
                             <div class="member-img">
                                 <a href="members.html">
-                                    <img src="assets/img/member/1.jpg" alt="Member Images">
+                                    <img src="/assets/img/member/1.jpg" alt="Member Images">
                                 </a>
                                 <div class="member-content">
                                     <a href="members.html">
@@ -50,7 +50,7 @@
                         <div class="member-card">
                             <div class="member-img">
                                 <a href="members.html">
-                                    <img src="assets/img/member/2.jpg" alt="Member Images">
+                                    <img src="/assets/img/member/2.jpg" alt="Member Images">
                                 </a>
                                 <div class="member-content">
                                     <a href="members.html">
@@ -85,7 +85,7 @@
                         <div class="member-card">
                             <div class="member-img">
                                 <a href="members.html">
-                                    <img src="assets/img/member/3.jpg" alt="Member Images">
+                                    <img src="/assets/img/member/3.jpg" alt="Member Images">
                                 </a>
                                 <div class="member-content">
                                     <a href="members.html">
@@ -120,7 +120,7 @@
                         <div class="member-card">
                             <div class="member-img">
                                 <a href="members.html">
-                                    <img src="assets/img/member/4.jpg" alt="Member Images">
+                                    <img src="/assets/img/member/4.jpg" alt="Member Images">
                                 </a>
                                 <div class="member-content">
                                     <a href="members.html">
@@ -153,7 +153,7 @@
                 </div>
             </div>
             <div class="member-shape">
-                <img src="assets/img/shape/member-shape-1.png" alt="Shape">
+                <img src="/assets/img/shape/member-shape-1.png" alt="Shape">
             </div>
         </div>
         <!-- Member Area End -->

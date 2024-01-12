@@ -14,7 +14,7 @@
                 <div class="client-slider owl-carousel owl-theme">
                     <div class="client-item">
                         <div class="client-item-img">
-                            <img src="assets/img/testimonial/t1.png" alt="Testimonial Images">
+                            <img src="/assets/img/testimonial/t1.png" alt="Testimonial Images">
                         </div>
                         <h3>John Doe</h3>
                         <p>
@@ -25,7 +25,7 @@
 
                     <div class="client-item">
                         <div class="client-item-img">
-                            <img src="assets/img/testimonial/t4.png" alt="Testimonial Images">
+                            <img src="/assets/img/testimonial/t4.png" alt="Testimonial Images">
                         </div>
                         <h3>Knot Doe</h3>
                         <p>
@@ -36,7 +36,7 @@
 
                     <div class="client-item">
                         <div class="client-item-img">
-                            <img src="assets/img/testimonial/t5.png" alt="Testimonial Images">
+                            <img src="/assets/img/testimonial/t5.png" alt="Testimonial Images">
                         </div>
                         <h3>John Smith</h3>
                         <p>
@@ -46,7 +46,7 @@
                     </div>
                     <div class="client-item">
                         <div class="client-item-img">
-                            <img src="assets/img/testimonial/t3.png" alt="Testimonial Images">
+                            <img src="/assets/img/testimonial/t3.png" alt="Testimonial Images">
                         </div>
                         <h3>Evanaa</h3>
                         <p>

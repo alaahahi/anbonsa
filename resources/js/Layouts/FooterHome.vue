@@ -9,7 +9,7 @@
                             <div class="footer-single">
                                 <div class="footer-single-content">
                                     <a href="index.html">
-                                        <img src="assets/img/footer-logo.png" alt="Logo">
+                                        <img src="/assets/img/footer-logo.png" alt="Logo">
                                     </a>
                                     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum efficitur convallis arcu, id dapibus nulla tincidunt.</p>
                                 </div>
