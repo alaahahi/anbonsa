@@ -17,27 +17,25 @@ const closeNav = () => {
 };
 const loading = ref(true);
 
-const handlePageChange = (event) => {
-  loading.value=false
-  loading.value = event.detail.component === 'loading';
-};
 
-document.addEventListener('inertia:visit', handlePageChange);
-
-onUnmounted(() => {
-  loading.value=false
-  document.removeEventListener('inertia:visit', handlePageChange);
+onMounted(() => {
+    loading.value=true;
+    setTimeout(() => {
+    // Code to be executed after the timeout
+    loading.value=false;
+  }, 1000);
 });
-
 const i18n = useI18n();
 let language =ref(i18n.locale.value);
 
 const switchLocale = async (locale) => {
+    loading.value=true;
+
       try {
+        localStorage.setItem('lang', locale);
         const response = await axios.get(`/lang/${locale}`);
 		language.value = locale; 
 		i18n.locale.value = locale;
-          localStorage.setItem('lang', locale);
 		  window.location.reload();
   
       } catch (error) {
@@ -49,15 +47,78 @@ const switchLocale = async (locale) => {
 </script>
 
 <template>
-       <!-- <div class="preloader">
+       <div class="preloader" v-if="loading">
             <div class="preloader-wave"></div>
-        </div> -->
+        </div>  
         <!-- End Preloader -->
 
         <!-- Start Navbar Area -->
         <div class="navbar-area">
             <!-- Menu For Mobile Device -->
-             <div class="mobile-nav">
+             <div class="mobile-nav mean-container">
+                <div class="mean-bar">
+                    <a @click="openNav" class="meanmenu-reveal" :class="{'meanclose':openNav}" style="right: 0px; left: auto; text-align: center; text-indent: 0px; font-size: 18px;">
+                        <span v-if="openNav"><span><span></span></span></span>
+                        <b v-else @click="closeNav">x</b>
+                    </a><nav class="mean-nav">
+                            <ul class="navbar-nav m-auto"  v-if="navActive">
+                                <li class="nav-item">
+                                    <a href="/" class="nav-link ">
+                                        Home 
+                                    </a>
+                                </li>
+                                <li class="nav-item">
+                                    <a href="/about" class="nav-link">
+                                        About
+                                    </a>
+                                </li>
+                                <li class="nav-item">
+                                    <a href="/portfolio" class="nav-link">
+                                        Portfolio 
+                                    </a>
+                                </li>
+                                <li class="nav-item">
+                                    <a href="/services" class="nav-link">
+                                        Services 
+                                        <i class="bx bxs-chevron-right"></i>
+                                    </a>
+                                    <ul class="dropdown-menu" v-if="navActive">
+                                        <li class="nav-item">
+                                            <a href="/service-details" class="nav-link">
+                                                Service Details 
+                                            </a>
+                                        </li>
+                                    </ul>
+                                <a class="mean-expand" href="#" style="font-size: 18px">+</a></li>
+                                <li class="nav-item">
+                                    <a href="/faq" class="nav-link">
+                                        FAQ
+                                    </a>
+                                </li>
+                                <li class="nav-item">
+                                    <a href="/blog" class="nav-link">
+                                        Blog 
+                                        <i class="bx bxs-chevron-right"></i>
+                                    </a>
+                                    <ul class="dropdown-menu" v-if="navActive">
+                                        <li class="nav-item">
+                                            <a href="blog-details" class="nav-link">
+                                                Blog Details 
+                                            </a>
+                                        </li>
+                                    </ul>
+                                <a class="mean-expand" href="#" style="font-size: 18px">+</a></li>
+                                <li class="nav-item mean-last">
+                                    <a href="/contact" class="nav-link">
+                                        Contact
+                                    </a>
+                                </li>
+                            </ul>
+
+                            <div class="menu-btn">
+                                <a href="#" class="seo-btn">SEO Score</a>
+                            </div>
+                        </nav></div>                
                 <Link href="/" class="logo">
                     <img src="/assets/img/logo.png" class="logo-one" alt="Logo">
                 </Link>
